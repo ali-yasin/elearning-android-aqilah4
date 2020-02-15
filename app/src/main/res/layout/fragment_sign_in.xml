@@ -28,7 +28,7 @@
             android:textStyle="bold"
             android:textSize="15sp"
             android:textColor="@color/colorPrimary"
-            android:text="Selamat datang di Elearning SMK Insan Aqilah 4 Grogol" />
+            android:text="Welcome to Elearning SMK Insan Aqilah 4 Grogol" />
 
 
         <com.google.android.material.textfield.TextInputLayout
