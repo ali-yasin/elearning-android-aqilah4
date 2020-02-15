@@ -37,7 +37,7 @@
             android:layout_height="wrap_content">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/signin_username"
-                android:hint="@string/username"
+                android:hint="@string/NIS"
                 android:inputType="number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
