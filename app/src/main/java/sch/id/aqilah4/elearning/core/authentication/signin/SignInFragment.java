@@ -20,7 +20,6 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import sch.id.aqilah4.elearning.R;
-import sch.id.aqilah4.elearning.core.authentication.signup.SignUpFragment;
 import sch.id.aqilah4.elearning.models.ResponseAuth;
 import sch.id.aqilah4.elearning.utils.ActivityUtils;
 import sch.id.aqilah4.elearning.utils.SessionManagement;
@@ -105,10 +104,10 @@ public class SignInFragment extends Fragment implements SignInView {
 //        signInPresenter.loginProcess(username, password);
 //    }
 
-    @OnClick(R.id.signin_anchor_signup)
-    public void anchorSignUp() {
-        ActivityUtils.goToFragment(getFragmentManager(), new SignUpFragment(), R.id.frame_auth);
-    }
+//    @OnClick(R.id.signin_anchor_signup)
+//    public void anchorSignUp() {
+//        ActivityUtils.goToFragment(getFragmentManager(), new SignUpFragment(), R.id.frame_auth);
+//    }
 
     @Override
     public void showLoading(String loadingMessages) {

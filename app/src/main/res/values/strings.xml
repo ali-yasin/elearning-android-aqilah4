@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">E-Learning SMK Insan Aqilah 4 Grogol</string>
     <string name="level_placeholder">Choose a Level</string>
     <string name="username">NIS</string>
@@ -13,8 +13,8 @@
     <string name="classlevel">Level</string>
     <string name="button_signup">Register Now</string>
     <string name="anchor_signin">ELEARNING SMK INSAN AQILAH 4 GROGOL</string>
-    <string name="under">FROM</string>
-    <string name="under1">STUDENT AT PRADITA INSTITUT</string>
+    <string name="under" tools:ignore="MissingTranslation">FROM</string>
+    <string name="under1" tools:ignore="MissingTranslation">STUDENT AT PRADITA INSTITUT</string>
 
 
     <string name="tab_home">Home</string>
@@ -38,9 +38,9 @@
     <string name="report_trayagain">TRY AGAIN</string>
     <string name="detail_profil">Detail Profile</string>
     <string name="detail_name_label">Fullname</string>
-    <string name="detail_username_label">Username</string>
+    <string name="detail_username_label">NIS</string>
     <string name="detail_change_password">Change Password</string>
-    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_settings" tools:ignore="MissingTranslation">Settings</string>
 
     <!-- Strings related to Settings -->
 
@@ -116,6 +116,6 @@
     <string name="other_about">About Us</string>
     <string name="other_help">Help Me</string>
     <string name="other_signout">Signout</string>
-    <string name="old_password">Old Password</string>
-    <string name="new_password">New Password</string>
+    <string name="old_password">Password Lama</string>
+    <string name="new_password">Password Baru</string>
 </resources>

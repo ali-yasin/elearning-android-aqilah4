@@ -31,11 +31,11 @@
     <string name="exam_join">MULAI LATIHAN</string>
     <string name="report_session">LIHAT PEMBAHASAN</string>
     <string name="report_trayagain">LATIHAN LAGI</string>
-    <string name="detail_change_password">Ubah Kunci</string>
+    <string name="detail_change_password">Ubah Password</string>
     <string name="detail_name_label">Nama Lengkap</string>
-    <string name="detail_profil">Profil Lengkap</string>
-    <string name="detail_username_label">Username</string>
-    <string name="other_about">Tentang Kami</string>
+    <string name="detail_profil">Profile Siswa</string>
+    <string name="detail_username_label">NIS</string>
+    <string name="other_about">Tentang Aplikasi</string>
     <string name="other_help">Bantuan</string>
     <string name="other_signout">Keluar</string>
 </resources>
