@@ -15,11 +15,13 @@
         <TextView
             android:id="@+id/item_list_package_title"
             android:layout_width="match_parent"
+            android:fontFamily="sans-serif-light"
             android:layout_height="wrap_content" />
         <TextView
             android:id="@+id/item_list_package_detail"
             android:textColor="@color/colorGray"
             android:layout_width="match_parent"
+            android:fontFamily="sans-serif-light"
             android:layout_height="wrap_content" />
         <LinearLayout
             android:layout_marginTop="@dimen/small_standard_margin"
@@ -33,6 +35,7 @@
                 android:textSize="@dimen/small_text"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
+                android:fontFamily="sans-serif-light"
                 android:layout_height="wrap_content" />
             <TextView
                 android:id="@+id/item_list_package_total"
@@ -40,6 +43,7 @@
                 android:textSize="@dimen/small_text"
                 android:gravity="right"
                 android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </LinearLayout>

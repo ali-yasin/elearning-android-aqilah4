@@ -9,4 +9,6 @@
     <color name="colorGrayAccent">#f0f0f0</color>
     <color name="colorQuizIndicator">#e4d8c9</color>
     <color name="colorBackgroundAccent">#bdd2f5</color>
+    <color name="colorBackgroundAccent1">#ffa500</color>
+
 </resources>

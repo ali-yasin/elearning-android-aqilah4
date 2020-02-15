@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">E-Learning SMK Insan Aqilah 4 Grogol</string>
     <string name="level_placeholder">Choose a Level</string>
-    <string name="username">Username</string>
+    <string name="username">NIS</string>
     <string name="password">Password</string>
     <string name="button_signin">Login Now</string>
     <string name="anchor_signup">Don\'t have an account ? Register Now</string>
@@ -13,6 +13,10 @@
     <string name="classlevel">Level</string>
     <string name="button_signup">Register Now</string>
     <string name="anchor_signin">ELEARNING SMK INSAN AQILAH 4 GROGOL</string>
+    <string name="under">FROM</string>
+    <string name="under1">STUDENT AT PRADITA INSTITUT</string>
+
+
     <string name="tab_home">Home</string>
     <string name="tab_transaction">History</string>
     <string name="tab_account">Account</string>

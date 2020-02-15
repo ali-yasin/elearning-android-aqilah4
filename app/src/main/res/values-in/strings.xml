@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">E-Learning SMK Insan Aqilah 4 Grogol</string>
-    <string name="username">Username</string>
+    <string name="username">NIS</string>
     <string name="password">Password</string>
     <string name="button_signin">Login</string>
     <string name="anchor_signup">Belum memiliki akun ? Daftar dahulu</string>

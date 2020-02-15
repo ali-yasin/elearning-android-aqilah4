@@ -11,9 +11,10 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="@dimen/quiz_separator"
-        android:gravity="center_vertical"
-        >
+        android:gravity="center_vertical">
+
        <include layout="@layout/rv_tambahan"></include>
+
     </LinearLayout>
     <LinearLayout
         android:layout_marginBottom="@dimen/quiz_separator"
@@ -41,6 +42,7 @@
                             android:textColor="@color/colorBlack"
                             android:padding="@dimen/big_standard_margin"
                             android:textSize="@dimen/standard_text"
+                            android:fontFamily="sans-serif-light"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content" />
                     </LinearLayout>
@@ -105,6 +107,7 @@
                 android:background="@color/colorQuizIndicator"
                 android:layout_weight="1"
                 android:text="SEBELUMNYA"
+                android:fontFamily="sans-serif-light"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <androidx.appcompat.widget.AppCompatButton
@@ -113,12 +116,16 @@
                 android:layout_weight="1"
                 android:text="KUMPULKAN"
                 android:layout_width="match_parent"
+                android:fontFamily="sans-serif-light"
+
                 android:layout_height="wrap_content" />
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/quiz_next"
                 android:background="@color/colorQuizIndicator"
                 android:layout_weight="1"
                 android:text="BERIKUTNYA"
+                android:fontFamily="sans-serif-light"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </LinearLayout>

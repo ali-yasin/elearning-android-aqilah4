@@ -25,6 +25,7 @@
                     android:textColor="@color/colorGray"
                     android:background="@color/colorWhite"
                     android:layout_width="match_parent"
+                    android:fontFamily="sans-serif-light"
                     android:layout_height="wrap_content" />
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/other_helpme"
@@ -32,6 +33,7 @@
                     android:textColor="@color/colorGray"
                     android:background="@color/colorWhite"
                     android:layout_width="match_parent"
+                    android:fontFamily="sans-serif-light"
                     android:layout_height="wrap_content" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -48,6 +50,7 @@
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/other_signout"
                     android:text="@string/other_signout"
+                    android:fontFamily="sans-serif-light"
                     android:textColor="@color/colorWhite"
                     android:background="@color/colorPrimary"
                     android:layout_width="match_parent"

@@ -27,8 +27,10 @@
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textSize="15sp"
+            android:fontFamily="sans-serif-light"
+            android:textFontWeight="@android:integer/config_longAnimTime"
             android:textColor="@color/colorPrimary"
-            android:text="Welcome to Elearning SMK Insan Aqilah 4 Grogol" />
+            android:text="Welcome to E-Learning SMK Insan Aqilah 4 Grogol !" />
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -37,9 +39,10 @@
             android:layout_height="wrap_content">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/signin_username"
-                android:hint="@string/NIS"
+                android:hint="@string/username"
                 android:inputType="number"
                 android:layout_width="match_parent"
+                android:fontFamily="sans-serif-light"
                 android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -52,6 +55,8 @@
                 android:hint="@string/password"
                 android:inputType="numberPassword"
                 android:layout_width="match_parent"
+                android:textFontWeight="@android:integer/config_longAnimTime"
+
                 android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -62,6 +67,8 @@
             android:background="@color/colorPrimary"
             android:textColor="@color/colorWhite"
             android:layout_width="match_parent"
+            android:fontFamily="sans-serif-light"
+            android:textFontWeight="@android:integer/config_longAnimTime"
             android:layout_height="wrap_content" />
 
         <TextView
@@ -70,7 +77,9 @@
             android:text="@string/anchor_signup"
             android:padding="@dimen/small_standard_margin"
             android:gravity="center"
-            android:layout_width="match_parent"
+            android:fontFamily="sans-serif-light"
+            android:textFontWeight="@android:integer/config_longAnimTime"
+        android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
     </LinearLayout>
