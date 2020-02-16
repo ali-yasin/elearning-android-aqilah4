@@ -1,31 +1,20 @@
 package sch.id.aqilah4.elearning.core.dashboard.home;
 
-
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
-import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-
-
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-
-import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 import io.reactivex.annotations.Nullable;
 import sch.id.aqilah4.elearning.R;
 import sch.id.aqilah4.elearning.adapter.CategoryAdapter;
@@ -34,14 +23,11 @@ import sch.id.aqilah4.elearning.core.dashboard.transactional.TransactionalPresen
 import sch.id.aqilah4.elearning.core.dashboard.transactional.TransactionalView;
 import sch.id.aqilah4.elearning.models.Category;
 import sch.id.aqilah4.elearning.models.History;
-import sch.id.aqilah4.elearning.models.ListPackage;
 import sch.id.aqilah4.elearning.models.PackageLatest;
 import sch.id.aqilah4.elearning.models.ResponseCategory;
 import sch.id.aqilah4.elearning.models.ResponseHistory;
 import sch.id.aqilah4.elearning.models.ResponseLatest;
 import sch.id.aqilah4.elearning.utils.RecyclerItemClickListener;
-
-import static android.content.ContentValues.TAG;
 
 public class HomeFragment extends Fragment implements HomeView, TransactionalView {
     private HomePresenter homePresenter;
@@ -50,28 +36,21 @@ public class HomeFragment extends Fragment implements HomeView, TransactionalVie
     private List<History> mHistory  ;
     private TransactionalPresenter presenter;
     SwipeRefreshLayout swipe_refersh;
-
-
-    //    @BindView(R.id.home_listcategory)
     RecyclerView home_listcategory;
-//    @BindView(R.id.home_loading)
     ProgressBar home_loading;
-//    @BindView(R.id.home_listlatest)
     RecyclerView home_listlatest;
+
     public HomeFragment() {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view   = inflater.inflate(R.layout.fragment_home, container, false);
         ButterKnife.bind(this, view);
         swipe_refersh = view.findViewById(R.id.swipe_refersh);
         home_listlatest = view.findViewById(R.id.home_listlatest);
         home_loading = view.findViewById(R.id.home_loading);
         home_listcategory = view.findViewById(R.id.home_listcategory);
-
-
         initComponent(view);
         return view;
     }
@@ -95,7 +74,6 @@ public class HomeFragment extends Fragment implements HomeView, TransactionalVie
         home_listcategory.addOnItemTouchListener(selectItemListener());
         home_listcategory.setItemAnimator(new DefaultItemAnimator());
         // Create List Latest
-       // home_listlatest.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
         home_listlatest.setLayoutManager(new GridLayoutManager(getActivity(),2));
         home_listlatest.addOnItemTouchListener(latestClickListener());
         home_listlatest.setItemAnimator(new DefaultItemAnimator());
@@ -105,10 +83,8 @@ public class HomeFragment extends Fragment implements HomeView, TransactionalVie
         return new RecyclerItemClickListener(getActivity(), home_listcategory, new RecyclerItemClickListener.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
-
-
-                    Category category = categories.get(position);
-                    homePresenter.getItemCategory(category, getActivity());
+                Category category = categories.get(position);
+                homePresenter.getItemCategory(category, getActivity());
 
             }
 
@@ -118,6 +94,7 @@ public class HomeFragment extends Fragment implements HomeView, TransactionalVie
             }
         });
     }
+
     private RecyclerItemClickListener latestClickListener(){
         return new RecyclerItemClickListener(getActivity(), home_listlatest, new RecyclerItemClickListener.OnItemClickListener() {
             @Override
@@ -144,6 +121,7 @@ public class HomeFragment extends Fragment implements HomeView, TransactionalVie
             }
         });
     }
+
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);

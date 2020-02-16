@@ -1,4 +1,3 @@
-
 package sch.id.aqilah4.elearning.models;
 
 import java.util.List;

@@ -2,9 +2,7 @@ package sch.id.aqilah4.elearning.core.category;
 
 import android.app.Activity;
 import android.content.Intent;
-
 import java.util.HashMap;
-
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.schedulers.Schedulers;
@@ -15,7 +13,6 @@ import sch.id.aqilah4.elearning.models.ResponseDetailCategory;
 import sch.id.aqilah4.elearning.network.NetworkClient;
 import sch.id.aqilah4.elearning.network.RequestAPI;
 import sch.id.aqilah4.elearning.utils.SessionManagement;
-
 
 public class CategoryPresenter {
     private CategoryView view;
@@ -51,19 +48,23 @@ public class CategoryPresenter {
                 )
         );
     }
+
     private void handleCategory(ResponseDetailCategory category){
         view.categoryDetailSuccess(category);
         view.hideLoading();
     }
+
     private void handleCategoryError(Throwable throwable){
         view.categoryDetailFailed(throwable.getLocalizedMessage().toString());
         view.hideLoading();
     }
+
     public void destroyData(){
         if (mCompositeDisposable != null){
             mCompositeDisposable.dispose();
         }
     }
+
     public void getItemExamination(ListPackage listPackage, Activity activity){
         Intent intent   = new Intent(activity, ExaminationActivity.class);
         intent.putExtra("title", listPackage.getExamTitle());

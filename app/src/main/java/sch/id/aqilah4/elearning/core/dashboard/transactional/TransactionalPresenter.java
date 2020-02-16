@@ -1,10 +1,7 @@
 package sch.id.aqilah4.elearning.core.dashboard.transactional;
 
 import android.util.Log;
-import android.widget.Toast;
-
 import java.util.HashMap;
-
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.schedulers.Schedulers;
@@ -13,7 +10,6 @@ import sch.id.aqilah4.elearning.models.ResponseHistory;
 import sch.id.aqilah4.elearning.network.NetworkClient;
 import sch.id.aqilah4.elearning.network.RequestAPI;
 import sch.id.aqilah4.elearning.utils.SessionManagement;
-
 
 public class TransactionalPresenter {
     private static final String TAG = TransactionalPresenter.class.getSimpleName();
@@ -32,6 +28,7 @@ public class TransactionalPresenter {
         if (mSessionManagement != null)
             user    = mSessionManagement.getUserDetails();
     }
+
     public void loadHistory(){
         view.showLoading();
         RequestAPI requestAPI   = NetworkClient.getRetrofit().create(RequestAPI.class);
@@ -49,10 +46,12 @@ public class TransactionalPresenter {
                 )
         );
     }
+
     private void handleResponse(ResponseHistory history){
         view.loadHistory(history);
         view.hideLoading();
     }
+
     private void handleError(Throwable throwable){
         view.loadHistoryError(throwable.getLocalizedMessage().toString());
         Log.d(TAG, "handleError: "+throwable.toString());
@@ -60,6 +59,7 @@ public class TransactionalPresenter {
         Log.d(TAG, "handleError: "+user.get(SessionManagement.key_token).toString().trim());
         view.hideLoading();
     }
+
     public void destroyData(){
         if (mCompositeDisposable != null)
             mCompositeDisposable.dispose();

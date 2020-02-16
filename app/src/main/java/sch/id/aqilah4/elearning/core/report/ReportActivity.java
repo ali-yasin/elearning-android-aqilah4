@@ -8,11 +8,8 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
-
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -51,7 +48,6 @@ public class ReportActivity extends AppCompatActivity {
         report_indicator = (ProgressRingView)findViewById(R.id.report_indicator) ;
         report_tryagai = (AppCompatButton)findViewById(R.id.report_tryagai);
         report_session = (AppCompatButton)findViewById(R.id.report_session);
-
 
         this.setTitle("Laporan Pembelajaran");
         initData();

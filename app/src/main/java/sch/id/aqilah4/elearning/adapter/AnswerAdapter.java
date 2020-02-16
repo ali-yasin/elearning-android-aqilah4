@@ -41,7 +41,6 @@ public class AnswerAdapter extends RecyclerView.Adapter<AnswerAdapter.AnswerView
     }
 
     class AnswerViewHolder extends RecyclerView.ViewHolder{
-        @BindView(R.id.answer_label)
         TextView anwer_label;
         public AnswerViewHolder(View itemView) {
             super(itemView);

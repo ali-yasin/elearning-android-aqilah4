@@ -1,13 +1,11 @@
 package sch.id.aqilah4.elearning.core.authentication.signin;
 
-
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.schedulers.Schedulers;
 import sch.id.aqilah4.elearning.models.ResponseAuth;
 import sch.id.aqilah4.elearning.network.NetworkClient;
 import sch.id.aqilah4.elearning.network.RequestAPI;
-
 
 public class SignInPresenter{
     private SignInView view;
@@ -32,14 +30,17 @@ public class SignInPresenter{
                 )
         );
     }
+
     private void handleResponse(ResponseAuth responseAuth){
         view.dataSuccess(responseAuth);
         view.hideLoading();
     }
+
     private void handleError(Throwable throwable){
         view.dataFailed(throwable.getLocalizedMessage().toString());
         view.hideLoading();
     }
+
     public void destroyData(){
         if (mCompositeDisposable != null){
             mCompositeDisposable.dispose();

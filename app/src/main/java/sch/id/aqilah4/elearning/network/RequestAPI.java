@@ -18,7 +18,6 @@ import sch.id.aqilah4.elearning.models.ResponsePackage;
 import sch.id.aqilah4.elearning.models.ResponsePassedExam;
 import sch.id.aqilah4.elearning.models.ResponseReport;
 
-
 public interface RequestAPI {
     @FormUrlEncoded
     @POST("auth/signin")

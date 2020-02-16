@@ -11,7 +11,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import java.util.List;
 import butterknife.BindView;
-import butterknife.ButterKnife;
 import sch.id.aqilah4.elearning.R;
 import sch.id.aqilah4.elearning.models.Category;
 

@@ -2,23 +2,16 @@ package sch.id.aqilah4.elearning.core.dashboard;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.WindowManager;
 import android.widget.TextView;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
-
 import com.google.android.material.tabs.TabLayout;
-
-
-import butterknife.BindView;
 import butterknife.ButterKnife;
 import sch.id.aqilah4.elearning.R;
 import sch.id.aqilah4.elearning.adapter.PageAdapter;
-import sch.id.aqilah4.elearning.core.authentication.AuthActivity;
 import sch.id.aqilah4.elearning.core.dashboard.account.AccountFragment;
 import sch.id.aqilah4.elearning.core.dashboard.home.HomeFragment;
 import sch.id.aqilah4.elearning.core.dashboard.other.OtherFragment;
@@ -37,7 +30,6 @@ public class DashboardActivity extends AppCompatActivity {
     ViewPager dashboard_pager;
     TabLayout dashboard_tablayout;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,12 +46,10 @@ public class DashboardActivity extends AppCompatActivity {
     }
 
     private void initComponent() {
-//        if (dashboard_toolbar != null){
             setSupportActionBar(dashboard_toolbar);
             createViewPager(dashboard_pager);
             dashboard_tablayout.setupWithViewPager(dashboard_pager);
             createTabIcon();
-//        }
     }
 
     private void createTabIcon() {
@@ -78,7 +68,7 @@ public class DashboardActivity extends AppCompatActivity {
 
         viewPager.setAdapter(pageAdapter);
     }
-    //tombol button 2 x
+
     @Override
     public void onBackPressed() {
         new AlertDialog.Builder(this)
