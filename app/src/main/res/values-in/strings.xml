@@ -8,7 +8,7 @@
     <string name="tab_home">Beranda</string>
     <string name="tab_setting">Setelan</string>
     <string name="tab_transaction">Riwayat</string>
-    <string name="total_soal">Butir</string>
+    <string name="total_soal">Soal</string>
     <string name="waktu_soal">Menit</string>
     <string name="title_activity_category">Nama Category</string>
     <string name="category_label">Kategori</string>
@@ -18,7 +18,7 @@
     <string name="exam_title">DESKRIPSI SOAL</string>
     <string name="exam_total">TOTAL PERTANYAAN</string>
     <string name="load_data">Menunggu data...</string>
-    <string name="exam_join">MULAI LATIHAN</string>
+    <string name="exam_join">IKUTI UJIAN</string>
     <string name="report_trayagain">LATIHAN LAGI</string>
     <string name="detail_change_password">Ubah Password</string>
     <string name="detail_name_label">Nama Lengkap</string>

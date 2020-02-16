@@ -39,7 +39,7 @@ public class ExaminationActivity extends AppCompatActivity implements Examinatio
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_examination);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
+       // getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
         exam_title = (TextView) findViewById(R.id.exam_title);
         exam_time = (TextView) findViewById(R.id.exam_time);
         exam_total = (TextView) findViewById(R.id.exam_total);
