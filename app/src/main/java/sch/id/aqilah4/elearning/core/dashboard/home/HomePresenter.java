@@ -3,10 +3,7 @@ package sch.id.aqilah4.elearning.core.dashboard.home;
 import android.app.Activity;
 import android.content.Intent;
 import android.util.Log;
-import android.widget.Toast;
-
 import java.util.HashMap;
-
 import io.reactivex.Observable;
 import io.reactivex.ObservableSource;
 import io.reactivex.android.schedulers.AndroidSchedulers;
@@ -25,9 +22,7 @@ import sch.id.aqilah4.elearning.models.ResponseLatest;
 import sch.id.aqilah4.elearning.network.NetworkClient;
 import sch.id.aqilah4.elearning.network.RequestAPI;
 import sch.id.aqilah4.elearning.utils.SessionManagement;
-
 import static android.content.ContentValues.TAG;
-
 
 public class HomePresenter {
     private HomeView view;

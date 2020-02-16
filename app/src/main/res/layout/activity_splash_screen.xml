@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,13 +10,13 @@
 
     <ImageView
         android:id="@+id/imgLogo"
-        android:layout_width="167dp"
-        android:layout_height="142dp"
+        android:layout_width="228dp"
+        android:layout_height="181dp"
         android:layout_centerInParent="true"
-        android:src="@drawable/aqilah4"></ImageView>
+        android:src="@drawable/aqilah4">
+    </ImageView>
 
     <TextView
-        android:id="@+id/abc"
         android:layout_width="167dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imgLogo"
@@ -31,7 +32,6 @@
         android:textSize="15sp" />
 
     <TextView
-        android:id="@+id/abcd"
         android:textFontWeight="@android:integer/config_longAnimTime"
         android:layout_width="167dp"
         android:layout_height="38dp"
@@ -47,6 +47,5 @@
         android:textColor="@color/colorBackgroundAccent1"
         android:textSize="17sp"
         android:textStyle="bold" />
-
 
 </RelativeLayout>

@@ -1,24 +1,17 @@
 package sch.id.aqilah4.elearning.core.dashboard.transactional;
 
-
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
 import android.widget.Toast;
-
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-
 import java.util.ArrayList;
 import java.util.List;
-
-import butterknife.BindView;
-import butterknife.ButterKnife;
 import io.reactivex.annotations.Nullable;
 import sch.id.aqilah4.elearning.R;
 import sch.id.aqilah4.elearning.adapter.HistoryAdapter;
@@ -28,22 +21,14 @@ import sch.id.aqilah4.elearning.models.ResponseHistory;
 public class TransactionalFragment extends Fragment implements TransactionalView {
     private List<History> histories;
     private TransactionalPresenter presenter;
-
-//    @BindView(R.id.history_list)
     RecyclerView history_list;
-//    @BindView(R.id.history_loading)
     ProgressBar history_loading;
 
     public TransactionalFragment() {
     }
 
-
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-//        View view = inflater.inflate(R.layout.fragment_transactional, container, false);
-//        ButterKnife.bind(this, view);
-//        initComponent(view);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_transactional, container, false);
         history_loading = view.findViewById(R.id.history_loading);
         history_list = view.findViewById(R.id.history_list);

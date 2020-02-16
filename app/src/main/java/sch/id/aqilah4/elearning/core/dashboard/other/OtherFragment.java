@@ -1,20 +1,14 @@
 package sch.id.aqilah4.elearning.core.dashboard.other;
 
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.WindowManager;
 import android.widget.Toast;
-
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.fragment.app.Fragment;
-
-
-import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import sch.id.aqilah4.elearning.R;
@@ -28,6 +22,7 @@ public class OtherFragment extends Fragment implements OtherView {
 
     public OtherFragment() {
     }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view   = inflater.inflate(R.layout.fragment_other, container, false);
@@ -68,9 +63,11 @@ public class OtherFragment extends Fragment implements OtherView {
         presenter.signoutSystem();
     }
     @OnClick(R.id.other_about)
+
     public void aboutUs(){
         Toast.makeText(getActivity(), "Aplikasi ini ditujukan untuk siswa siswa SMK INSAN AQILAH 4 GROGOL", Toast.LENGTH_SHORT).show();
     }
+
     @OnClick(R.id.other_helpme)
     public void helpMe(){
         Uri uri = Uri.parse("https://smkinsanaqilah4jkt.sch.id/contact");
@@ -86,5 +83,4 @@ public class OtherFragment extends Fragment implements OtherView {
         startActivity(intent);
         getActivity().finish();
     }
-
 }

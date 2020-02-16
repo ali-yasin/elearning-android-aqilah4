@@ -1,10 +1,7 @@
 package sch.id.aqilah4.elearning.core.examination;
 
 import android.util.Log;
-
-
 import java.util.HashMap;
-
 import io.reactivex.Observable;
 import io.reactivex.ObservableSource;
 import io.reactivex.android.schedulers.AndroidSchedulers;
@@ -19,10 +16,7 @@ import sch.id.aqilah4.elearning.models.ResponsePassedExam;
 import sch.id.aqilah4.elearning.network.NetworkClient;
 import sch.id.aqilah4.elearning.network.RequestAPI;
 import sch.id.aqilah4.elearning.utils.SessionManagement;
-
 import static android.content.ContentValues.TAG;
-
-
 
 public class ExaminationPresenter {
     private ExaminationView view;

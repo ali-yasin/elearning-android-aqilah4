@@ -1,11 +1,9 @@
 package sch.id.aqilah4.elearning.network;
 
 import android.util.Log;
-
 import io.reactivex.Observer;
 import io.reactivex.annotations.NonNull;
 import retrofit2.HttpException;
-
 
 public abstract class NetworkCallback<M> implements Observer<M> {
     private static final String TAG = NetworkCallback.class.getName();

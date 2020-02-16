@@ -1,6 +1,5 @@
 package sch.id.aqilah4.elearning.core.quiz;
 
-
 import sch.id.aqilah4.elearning.models.Examination;
 import sch.id.aqilah4.elearning.models.ResponsePackage;
 import sch.id.aqilah4.elearning.models.ResponseReport;

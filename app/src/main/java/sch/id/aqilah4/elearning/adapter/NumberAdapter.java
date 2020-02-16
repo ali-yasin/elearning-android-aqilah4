@@ -5,16 +5,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import androidx.recyclerview.widget.RecyclerView;
-
-
 import java.util.List;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import sch.id.aqilah4.elearning.R;
-
 
 public class NumberAdapter extends RecyclerView.Adapter<NumberAdapter.NumberViewHolder>{
     private List<Integer> listnumber;

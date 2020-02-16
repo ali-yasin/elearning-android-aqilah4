@@ -2,9 +2,7 @@ package sch.id.aqilah4.elearning.core.authentication;
 
 import android.app.Activity;
 import android.content.Intent;
-
 import sch.id.aqilah4.elearning.core.dashboard.DashboardActivity;
-
 
 public class AuthPresenter {
     private AuthView view;

@@ -6,9 +6,7 @@
     <color name="colorWhite">#ffffff</color>
     <color name="colorBlack">#000000</color>
     <color name="colorGray">#a9a6a6</color>
-    <color name="colorGrayAccent">#f0f0f0</color>
     <color name="colorQuizIndicator">#e4d8c9</color>
     <color name="colorBackgroundAccent">#bdd2f5</color>
     <color name="colorBackgroundAccent1">#ffa500</color>
-
 </resources>

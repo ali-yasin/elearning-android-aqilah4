@@ -1,11 +1,8 @@
 package sch.id.aqilah4.elearning.core.quiz;
 
 import android.util.Log;
-
-
 import java.util.HashMap;
 import java.util.List;
-
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.schedulers.Schedulers;
@@ -18,9 +15,7 @@ import sch.id.aqilah4.elearning.models.ResponseReport;
 import sch.id.aqilah4.elearning.network.NetworkClient;
 import sch.id.aqilah4.elearning.network.RequestAPI;
 import sch.id.aqilah4.elearning.utils.SessionManagement;
-
 import static android.content.ContentValues.TAG;
-
 
 public class QuizPresenter {
     private CompositeDisposable mCompositeDisposable;
@@ -98,7 +93,7 @@ public class QuizPresenter {
                 )
         );
     }
-//ini
+
     private void handleExamSubmit(ResponseReport report){
         view.submitExamination(report);
         view.submitHideLoading();

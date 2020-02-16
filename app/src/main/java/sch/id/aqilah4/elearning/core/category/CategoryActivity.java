@@ -6,22 +6,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-
 import java.util.List;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import sch.id.aqilah4.elearning.R;
@@ -58,6 +52,7 @@ public class CategoryActivity extends AppCompatActivity implements CategoryView 
         // Load Data
         categoryPresenter.loadDataDetail(getIntent().getStringExtra("id"));
     }
+
     private void initComponent(){
         categoryPresenter   = new CategoryPresenter(this);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -72,6 +67,7 @@ public class CategoryActivity extends AppCompatActivity implements CategoryView 
         detail_category_package.setItemAnimator(new DefaultItemAnimator());
 
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
@@ -81,6 +77,7 @@ public class CategoryActivity extends AppCompatActivity implements CategoryView 
         }
         return super.onOptionsItemSelected(item);
     }
+
     @Override
     public void showLoading() {
         loading_detail_category.setVisibility(View.VISIBLE);
@@ -103,6 +100,7 @@ public class CategoryActivity extends AppCompatActivity implements CategoryView 
                     listPackages, R.layout.item_package));
         }
     }
+
     private RecyclerItemClickListener itemClickListener(){
         return new RecyclerItemClickListener(getApplicationContext(), detail_category_package, new RecyclerItemClickListener.OnItemClickListener() {
             @Override
@@ -117,6 +115,7 @@ public class CategoryActivity extends AppCompatActivity implements CategoryView 
             }
         });
     }
+
     @Override
     public void categoryDetailFailed(String message) {
         Toast.makeText(this, "Error: "+ message, Toast.LENGTH_SHORT).show();
@@ -132,7 +131,7 @@ public class CategoryActivity extends AppCompatActivity implements CategoryView 
         super.onDestroy();
         categoryPresenter.destroyData();
     }
-    //tombol button 2 x
+
     @Override
     public void onBackPressed() {
         new AlertDialog.Builder(this)

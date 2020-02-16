@@ -1,12 +1,10 @@
 package sch.id.aqilah4.elearning.core.quiz;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.WindowManager;
-
 import sch.id.aqilah4.elearning.R;
 
 public class QuizV2Activity extends AppCompatActivity {
@@ -18,7 +16,7 @@ public class QuizV2Activity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
 
     }
-    //tombol button 2 x
+
     @Override
     public void onBackPressed() {
         new AlertDialog.Builder(this)

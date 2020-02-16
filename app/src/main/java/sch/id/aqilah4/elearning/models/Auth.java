@@ -1,8 +1,6 @@
-
 package sch.id.aqilah4.elearning.models;
 
 import com.google.gson.annotations.SerializedName;
-
 
 public class Auth {
 

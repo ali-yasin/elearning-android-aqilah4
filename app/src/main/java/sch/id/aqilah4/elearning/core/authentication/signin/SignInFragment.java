@@ -1,6 +1,5 @@
 package sch.id.aqilah4.elearning.core.authentication.signin;
 
-
 import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -9,36 +8,20 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.fragment.app.Fragment;
-
 import com.google.android.material.textfield.TextInputEditText;
-
-import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 import sch.id.aqilah4.elearning.R;
 import sch.id.aqilah4.elearning.models.ResponseAuth;
-import sch.id.aqilah4.elearning.utils.ActivityUtils;
 import sch.id.aqilah4.elearning.utils.SessionManagement;
 
 public class SignInFragment extends Fragment implements SignInView {
     private SignInPresenter signInPresenter;
     private ProgressDialog loading;
     private SessionManagement mSessionManagement;
-
-//    @BindView(R.id.signin_username)
-//    TextInputEditText signin_username;
-//
-//    @BindView(R.id.signin_password)
-//    TextInputEditText signin_password;
-
-    //    @BindView(R.id.signin_button)
     AppCompatButton signin_button;
-
-    //    @BindView(R.id.signin_anchor_signup)
     TextView signin_anchor_signup;
 
     public SignInFragment() {
@@ -91,23 +74,6 @@ public class SignInFragment extends Fragment implements SignInView {
             }
         });
     }
-
-
-//    @OnClick(R.id.signin_button)
-//    public void signInNow(){
-//        String username = signin_username.getText().toString();
-//        String password = signin_password.getText().toString();
-//        if (TextUtils.isEmpty(username) || TextUtils.isEmpty(password)){
-//            Toast.makeText(getActivity(), "Input Spesific Data", Toast.LENGTH_SHORT).show();
-//            return;
-//        }
-//        signInPresenter.loginProcess(username, password);
-//    }
-
-//    @OnClick(R.id.signin_anchor_signup)
-//    public void anchorSignUp() {
-//        ActivityUtils.goToFragment(getFragmentManager(), new SignUpFragment(), R.id.frame_auth);
-//    }
 
     @Override
     public void showLoading(String loadingMessages) {
