@@ -44,6 +44,7 @@
                 android:inputType="number"
                 android:layout_width="match_parent"
                 android:fontFamily="sans-serif-light"
+                android:longClickable="false"
                 android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -56,6 +57,7 @@
                 android:hint="@string/password"
                 android:inputType="numberPassword"
                 android:layout_width="match_parent"
+                android:longClickable="false"
                 android:textFontWeight="@android:integer/config_longAnimTime"
                 android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>

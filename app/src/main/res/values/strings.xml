@@ -7,7 +7,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="under" tools:ignore="MissingTranslation">FROM</string>
-    <string name="under1" tools:ignore="MissingTranslation">STUDENT AT PRADITA INSTITUT</string>
+    <string name="under1" tools:ignore="MissingTranslation">STUDENT AT PRADITA UNIVERSITY</string>
     <string name="tab_home">Home</string>
     <string name="tab_transaction">History</string>
     <string name="tab_account">Account</string>
