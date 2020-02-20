@@ -36,7 +36,6 @@ public class DashboardActivity extends AppCompatActivity {
         setContentView(R.layout.activity_dashboard);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
         ButterKnife.bind(this);
-
         dashboard_pager = findViewById(R.id.dashboard_pager);
         dashboard_tablayout = findViewById(R.id.dashboard_tablayout);
         dashboard_toolbar = findViewById(R.id.dashboard_toolbar);
