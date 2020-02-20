@@ -65,7 +65,7 @@ public class OtherFragment extends Fragment implements OtherView {
     @OnClick(R.id.other_about)
 
     public void aboutUs(){
-        Toast.makeText(getActivity(), "Aplikasi ini ditujukan untuk siswa siswi SMK INSAN AQILAH 4 GROGOL", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getActivity(), "Aplikasi ini ditujukan untuk siswa siswa SMK INSAN AQILAH 4 GROGOL", Toast.LENGTH_SHORT).show();
     }
 
     @OnClick(R.id.other_helpme)

@@ -21,6 +21,8 @@ import sch.id.aqilah4.elearning.core.examination.ExaminationActivity;
 public class ReportActivity extends AppCompatActivity {
     @BindView(R.id.report_title)
     TextView report_title;
+    @BindView(R.id.report_date)
+    TextView report_date;
     @BindView(R.id.report_indicator)
     ProgressRingView report_indicator;
     @BindView(R.id.report_total)
@@ -39,6 +41,7 @@ public class ReportActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
         ButterKnife.bind(this);
         report_title = (TextView)findViewById(R.id.report_title);
+        report_date = (TextView)findViewById(R.id.report_date);
         report_correct = (TextView)findViewById(R.id.report_correct);
         report_grade = (TextView)findViewById(R.id.report_grade);
         report_total = (TextView)findViewById(R.id.report_total);
@@ -60,6 +63,7 @@ public class ReportActivity extends AppCompatActivity {
 
     private void initData() {
         report_title.setText(getIntent().getStringExtra("title"));
+        report_date.setText("Minggu, 4 Juni 2017");
         float data  = Float.valueOf(getIntent().getStringExtra("weight").toString().trim())/100;
         report_indicator.setProgress(data);
         report_total.setText("Total : "+ getIntent().getStringExtra("total"));
