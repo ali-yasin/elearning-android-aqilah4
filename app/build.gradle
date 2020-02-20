@@ -7,7 +7,7 @@ android {
         applicationId "sch.id.sanqi4.elearning"
         minSdkVersion 21
         targetSdkVersion 29
-        versionCode 3
+        versionCode 4
         versionName "1.0.0"
         buildConfigField("String", "BASE_URL", "\"http://smkinsanaqilah4jkt.sch.id/api/\"")
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
