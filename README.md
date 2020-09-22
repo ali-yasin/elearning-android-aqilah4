@@ -3,6 +3,6 @@
 Projek Skripsi Pradita University dengan judul elearning android SMK Insan Aqilah 4 Grogol.
 Aplikasi ini ditujukan untuk siswa siswi khusus pada waktu ujian tengah semester, semester & ulangan.
 
-##Penggunaan
+## Penggunaan
 
 Clone project ini di android studio dan sesuaikan config.php juga database.php di Application/config pada sistem API, pastikan sudah clone project https://github.com/ali-yasin/elearning_aqilah.
